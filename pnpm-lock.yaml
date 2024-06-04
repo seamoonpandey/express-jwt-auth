@@ -32,6 +32,9 @@ importers:
         specifier: ^8.4.1
         version: 8.4.1
     devDependencies:
+      "@types/bcryptjs":
+        specifier: ^2.4.6
+        version: 2.4.6
       "@types/cookie-parser":
         specifier: ^1.4.7
         version: 1.4.7
@@ -234,6 +237,12 @@ packages:
     resolution:
       {
         integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==,
+      }
+
+  "@types/bcryptjs@2.4.6":
+    resolution:
+      {
+        integrity: sha512-9xlo6R2qDs5uixm0bcIqCeMCE6HiQsIyel9KQySStiyqNl2tnj2mP3DX1Nf56MD6KMenNNlBBsy3LJ7gUEQPXQ==,
       }
 
   "@types/body-parser@1.19.5":
@@ -3416,6 +3425,8 @@ snapshots:
   "@tsconfig/node14@1.0.3": {}
 
   "@tsconfig/node16@1.0.4": {}
+
+  "@types/bcryptjs@2.4.6": {}
 
   "@types/body-parser@1.19.5":
     dependencies:
