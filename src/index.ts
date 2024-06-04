@@ -10,5 +10,4 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Express + Ts Server");
 });
 
-app.listen(port, () => {
-});
+app.listen(port, () => {});
