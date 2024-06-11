@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import connectDB from "./config/db";
 import userRoutes from "./routes/userRoutes";
 import { errorHandler, notFound } from "./middleware/errorMiddleware";
+import multipartMiddleware from "./middleware/multiPartFormMiddleware";
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ connectDB();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(multipartMiddleware);
 
 app.use(cookieParser());
 
